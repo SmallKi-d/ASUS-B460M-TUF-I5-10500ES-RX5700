@@ -1,6 +1,6 @@
 # Hackintosh EFI文件
 ## OpenCore版本
-[2020-07-07 OpenCore-0.6.0-RELEASE](https://github.com/williambj1/OpenCore-Factory/releases/tag/2020-07-07)
+[2020-07-10 OpenCore-0.6.0-RELEASE](https://github.com/williambj1/OpenCore-Factory/releases/tag/2020-07-07)
 ## 适用范围
 
 本EFI仅在ASUS TUF B460M +I5 10500 ES +RX5700 平台测试，不保证其它平台完全正常使用
