@@ -1,6 +1,6 @@
 # Hackintosh EFI文件
 ## OpenCore版本
-[2020-07-10 OpenCore-0.6.0-RELEASE](https://github.com/williambj1/OpenCore-Factory/releases/tag/2020-07-07)
+[2020-07-20 OpenCore-0.6.0-DEBUG](https://github.com/williambj1/OpenCore-Factory/releases/tag/2020-07-20)
 ## 适用范围
 
 本EFI仅在ASUS TUF B460M +I5 10500 ES +RX5700 平台测试，不保证其它平台完全正常使用
@@ -44,7 +44,7 @@
 11. 声卡驱动正常
 12. 支持Realtek RTL8111/8168 B/C/D/E/F/G/H等（该驱动在安装前首先需要删除/S/L/E中的Realtek驱动，然后复制重建缓存。不需要可以删除或直接无视。）
 13. BrcmPatchRAM对博通网卡支持
-14. 请自行模拟NVRAM，参见：[Xjn's Blog](https://blog.xjn819.com/) 中使用OpenCore引导黑苹果 3.1 模拟NVRAM
+14. 请自行模拟NVRAM，参见：[Xjn's Blog](https://blog.xjn819.com/)中使用OpenCore引导黑苹果 3.1 模拟NVRAM
 
 ## 存在问题
 
