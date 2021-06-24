@@ -1,9 +1,11 @@
 # Hackintosh EFI文件
 ## OpenCore版本
-[2020-07-20 OpenCore-0.6.0-RELEASE](https://github.com/williambj1/OpenCore-Factory/releases/tag/2020-07-20)
+
+[OpenCore-0.7.0-RELEASE](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.0)
+
 ## 适用范围
 
-本EFI仅在ASUS TUF B460M +I5 10500 ES +RX5700 平台测试，不保证其它平台完全正常使用
+本EFI仅在本人ASUS TUF B460M +I5 10500 ES +RX5700 平台测试，不保证其它平台及同一平台不同环境下完全正常使用
 
 ## 参考内容
 
@@ -21,13 +23,15 @@
 7. [AppleALC.kext](https://github.com/acidanthera/AppleALC)
 8. [FakePCIID.kext](https://github.com/RehabMan/OS-X-Fake-PCI-ID)
 9. [FakePCIID_Intel_HDMI_Audio.kext](https://github.com/RehabMan/OS-X-Fake-PCI-ID)
-10. [NVMeFix.kext](https://github.com/acidanthera/NVMeFix)
-11. RadeonBoost.kext
-12. USBPorts.kext
-13. [USBPower.kext](http://blog.xjn819.com/wp-content/uploads/2019/10/USBPower.kext_.zip)
-14. [RealtekRTL8111.kext](https://github.com/RehabMan/OS-X-Realtek-Network)
-15. [BrcmFirmwareData.kext](https://github.com/acidanthera/BrcmPatchRAM)
-16. [BrcmPatchRAM3.kext](https://github.com/acidanthera/BrcmPatchRAM)
+10. USBMap.kext
+11. [RealtekRTL8111.kext](https://github.com/RehabMan/OS-X-Realtek-Network)
+12. [BrcmFirmwareData.kext](https://github.com/acidanthera/BrcmPatchRAM)
+13. [BrcmPatchRAM3.kext](https://github.com/acidanthera/BrcmPatchRAM)
+14. [CPUFriend.kext](https://github.com/acidanthera/CPUFriend)
+15. [HibernationFixup.kext](https://github.com/acidanthera/HibernationFixup)
+16. [NightShiftUnlocker.kext](https://github.com/0xFireWolf/NightShiftUnlocker)
+17. [NVMeFix.kext](https://github.com/acidanthera/NVMeFix)
+18. [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM)
 
 ## 已修正
 
@@ -45,13 +49,17 @@
 12. 支持Realtek RTL8111/8168 B/C/D/E/F/G/H等（该驱动在安装前首先需要删除/S/L/E中的Realtek驱动，然后复制重建缓存。不需要可以删除或直接无视。）
 13. BrcmPatchRAM对博通网卡支持
 14. 请自行模拟NVRAM，参见：[Xjn's Blog](https://blog.xjn819.com/)中使用OpenCore引导黑苹果 3.1 模拟NVRAM
+15. 兼容博通BCM943224PCIEBT4(其余型号未测试)
+16. FCPX核显加速（最新版BIOS开启共享显存设置为64M或以上）
+17. USB3.0正常识别（若USB定制无效参见：[解除USB限制原来如此简单](https://www.isolves.com/it/rj/jy/2020-06-24/21445.html)，或启用驱动列表中的USBinjectAll和XHCI-unsupported以及Kernel中Quirks下的XhciPortLimit选项，两种方法二选一）
+18. 正常引导macOS Big Sur
+19. 删除部分小众驱动，需要的请在驱动列表中自提,同时注意其中含有部分过时驱动，请自行斟酌
 
 ## 存在问题
 
-1. 关于本机中CPU型号不正常显示
+1. 关于本机中CPU型号不正常显示（不影响正常使用，这里显示型号为：3 GHz 六核Intel Core i9）
 2. CPU不正常变频（不影响正常使用）
-3. FCPX无核显加速
-4. PS2键盘映射
-5. USB3.0不识别
-6. 无法引导macOS 11
-7. 无图形引导界面
+3. PS2键盘映射
+4. 无图形引导界面（单纯懒得搞，想搞的可以自行百度很简单）
+5. 不兼容macOS 12 Monterey
+
