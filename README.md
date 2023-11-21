@@ -1,4 +1,4 @@
-# Hackintosh EFI文件
+# Hackintosh EFI文件 -- 停止维护
 ## OpenCore版本
 
 [OpenCore-0.7.0-RELEASE](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.0)
